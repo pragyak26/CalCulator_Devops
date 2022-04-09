@@ -93,7 +93,7 @@ public class Calculator {
                     System.out.println("---------- !! Exit !! ----------");
                     exit(0);
                 default:
-                    System.out.println("Invalid choice entered!");
+                    System.out.println("Invalid choice entered!........");
 
             }
             System.out.println("\n");
