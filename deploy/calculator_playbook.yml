@@ -1,0 +1,10 @@
+
+
+---
+- name: Pull Docker Image
+  hosts: all
+  tasks:
+    - name: Pull calculator.Calculator Image from Docker Hub
+      docker_image:
+        name: pragyak26/calculator-devops
+        source: pull
