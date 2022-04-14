@@ -46,7 +46,7 @@ public class Calculator {
         int choice;
         double x, y;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("---------- !! calculator.Calculator Operations !! ----------");
+        System.out.println("---------- <<<<<<Calculator Operations>>>>>>>----------");
         while(true){
             System.out.println("1. Square Root");
             System.out.println("2. Factorial");
@@ -61,7 +61,7 @@ public class Calculator {
                     System.out.print("Enter the number: ");
                     x = scanner.nextDouble();
                     System.out.println("Square Root of " + x + " : " + c.squareRoot(x));
-                    System.out.println("---------- !! Result evaluated !! ----------");
+                    System.out.println("---------- <<Result evaluated>> ----------");
                     break;
 
                 case 2: // For Factorial
@@ -70,14 +70,14 @@ public class Calculator {
                     x = scanner.nextDouble();
                     double result = c.factorial(x);
                     System.out.println("Factorial of " + x + " : " + result);
-                    System.out.println("---------- !! Result evaluated !! ----------");
+                    System.out.println("---------- <<Result evaluated>> ----------");
                     break;
                 case 3:  // For Natural Logarithm
                     System.out.println("Natural Logarithm Operation:");
                     System.out.print("Enter the number: ");
                     x = scanner.nextDouble();
                     System.out.println("Natural Logarithm of " + x + " : " + c.logarithm(x));
-                    System.out.println("---------- !! Result evaluated !! ----------");
+                    System.out.println("---------- <<Result evaluated>> ----------");
                     break;
                 case 4:  // For Power Function
                     System.out.println("Exponential Function:");
@@ -86,11 +86,11 @@ public class Calculator {
                     System.out.println("Enter the second number : ");
                     y = scanner.nextDouble();
                     System.out.println("Power :" + x + "^" + y + " : " + c.power(x,y));
-                    System.out.println("---------- !! Result evaluated !! ----------");
+                    System.out.println("---------- <<Result evaluated>> ----------");
                     break;
 
                 case 5:
-                    System.out.println("---------- !! Exit !! ----------");
+                    System.out.println("---------- <<Exit>>----------");
                     exit(0);
                 default:
                     System.out.println("Invalid choice entered!........");
