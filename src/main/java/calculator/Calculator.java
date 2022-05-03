@@ -17,11 +17,7 @@ public class Calculator {
         return Math.sqrt(var);
     }
     public double factorial(double var){
-        if(var < 0){
-            logger.info("Factorial of negative number is not possible!");
-            return Double.NaN;
-        }
-        else{
+
             double fact = 1;
             for(int i = 1; i <= var; i++){
                 fact *= i;
@@ -29,7 +25,7 @@ public class Calculator {
             logger.info("Factorial of the number : " + var + "\n Result is : " + fact);
             return fact;
         }
-    }
+
 
     public double logarithm(double var){
         logger.info("Calculating Natural Logarithm of : " + var + "\n Result : " + Math.log(var));
@@ -46,38 +42,38 @@ public class Calculator {
         int choice;
         double x, y;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("---------- <<<<<<Calculator Operations>>>>>>>----------");
+        System.out.println("*******Calculator Operations*******");
         while(true){
             System.out.println("1. Square Root");
             System.out.println("2. Factorial");
             System.out.println("3. Natural Logarithm");
             System.out.println("4. Power");
             System.out.println("5. Exit");
-            System.out.print("Please enter your choice : ");
+            System.out.print("Please enter your choice here: ");
             choice = scanner.nextInt();
             switch (choice){
                 case 1:  // For Square Root
-                    System.out.println("Square Root Operation:");
+                    System.out.println("Square Root :");
                     System.out.print("Enter the number: ");
                     x = scanner.nextDouble();
                     System.out.println("Square Root of " + x + " : " + c.squareRoot(x));
-                    System.out.println("---------- <<Result evaluated>> ----------");
+                    System.out.println(" <<Result evaluated>>");
                     break;
 
                 case 2: // For Factorial
-                    System.out.println("Factorial Operation:");
+                    System.out.println("Factorial :");
                     System.out.print("Enter the number: ");
                     x = scanner.nextDouble();
                     double result = c.factorial(x);
                     System.out.println("Factorial of " + x + " : " + result);
-                    System.out.println("---------- <<Result evaluated>> ----------");
+                    System.out.println(" <<Result evaluated>> ");
                     break;
                 case 3:  // For Natural Logarithm
                     System.out.println("Natural Logarithm Operation:");
                     System.out.print("Enter the number: ");
                     x = scanner.nextDouble();
                     System.out.println("Natural Logarithm of " + x + " : " + c.logarithm(x));
-                    System.out.println("---------- <<Result evaluated>> ----------");
+                    System.out.println("<<Result evaluated>> ");
                     break;
                 case 4:  // For Power Function
                     System.out.println("Exponential Function:");
@@ -86,14 +82,14 @@ public class Calculator {
                     System.out.println("Enter the second number : ");
                     y = scanner.nextDouble();
                     System.out.println("Power :" + x + "^" + y + " : " + c.power(x,y));
-                    System.out.println("---------- <<Result evaluated>> ----------");
+                    System.out.println(" <<Result evaluated>> ");
                     break;
 
                 case 5:
-                    System.out.println("---------- <<Exit>>----------");
+                    System.out.println(" <<Exit>>");
                     exit(0);
                 default:
-                    System.out.println("Invalid choice entered!........");
+                    System.out.println("Invalid choice entered!");
 
             }
             System.out.println("\n");
